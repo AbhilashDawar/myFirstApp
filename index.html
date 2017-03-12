@@ -1,1 +1,18 @@
-<h1>Welcome to first cloud application</h1>
+<h1>Today's Quote:</h1>
+<h3 id="quote"></h3>
+<script>
+    var quotes = [
+        "An investment in knowledge pays best interest. -Benjamin Franklin",
+        "The best thing to hold onto life is each other. -Audrey Hepburn",
+        "The best way to find yourself is to lose yourself in service of others. -Mahatma Gandhi",
+        "Stay Hungry, Stay Foolish. -Steve Jobs",
+        "The best way to pay for a lovely moment is to enjoy it. -Richard Bach",
+        "Design is not just what it looks like and feels like. Design is how it works. -Steve Jobs"
+    ]
+    function getQuote() {
+        var index = Math.ceil(Math.random() * quotes.length);
+        return quotes[index];
+    }
+    document.getElementById("quote").innerHTML = getQuote();
+
+</script>
