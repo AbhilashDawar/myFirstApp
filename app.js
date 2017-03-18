@@ -7,7 +7,7 @@ app.get("/", function(req, res) {
 	res.sendFile(__dirname + "/index.html");
 });
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8000;
 
 app.listen(port, function() {
 	console.log("Server can be accessed at http://localhost:"+port);
